@@ -1,0 +1,15 @@
+<div class="wrapper" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); grid-gap: 25px;">
+    <div class="card" *ngFor="let i of carpage">
+      <img [src]="i.imagee" />
+      <div class="info">
+        <h1>{{ i.titles }}</h1>
+        <p>{{ i.desc }}</p>
+        <!-- <button routerLink="/units/recipe">READ MORE</button> -->
+        <!-- <button [routerLink]="['/units/recipe', i.id]">READ MORE</button> -->
+        <button (click)="navigateToNextPage(i.id)">Next Page</button>       
+  
+  
+      </div>
+    </div>
+  </div>
+  
