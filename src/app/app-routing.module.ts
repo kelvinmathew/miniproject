@@ -9,6 +9,7 @@ import { BikepageComponent } from './pages/bikepage/bikepage.component';
 import { SinglepagesComponent } from './singlepages/singlepages.component';
 import { BookingpagesComponent } from './pages/bookingpages/bookingpages.component';
 import { Singlepages1Component } from './pages/singlepages1/singlepages1.component';
+
 const routes: Routes = [
   {
     path:'',component:HomepageComponent
@@ -16,26 +17,27 @@ const routes: Routes = [
   {
     path:'home',component:HomepageComponent
   },
+ 
   {
-    path:'sign in',component:SigninComponent
+    path:'signin',component:SigninComponent
   },
   {
-     path:'sign up',component:SignupComponent
+    path:'signup',component:SignupComponent
   },
   {
-    path:'contact us',component:ContactusComponent
+    path:'contactus',component:ContactusComponent
   },
   {
-    path:'car page',component:CarpageComponent
+    path:'carpage',component:CarpageComponent
   },
   {
     path:'bikepage',component:BikepageComponent
   },
   {
-    path:'single pages',component:SinglepagesComponent
+    path:'singlepages',component:SinglepagesComponent
   },
   {
-    path:'booking pages',component:BookingpagesComponent
+    path:'bookingpages',component:BookingpagesComponent
   },
   {
     path:'singlepages1',component:Singlepages1Component

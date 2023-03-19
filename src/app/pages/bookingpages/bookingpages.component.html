@@ -22,11 +22,11 @@
         
             <!-- <p>Personal Details</p> --><br>
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" [(ngModel)]="name" name="name" required>
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" [(ngModel)]="email" required>
             <label for="phone">Phone</label>
-            <input type="number" id="phone" name="phone" required>
+            <input type="number" id="phone" name="phone" [(ngModel)]="number" required>
    
               <p>Booking Details</p>
         <div class="row">
@@ -34,9 +34,9 @@
               <div class="col-50">
         
                 <label for="time">Pick up(date and time):</label>
-        <input type="datetime-local" id="time" name="time" required>
+        <input type="datetime-local" id="time" name="time"  required>
                         <label for="event">select Car or Bike </label>
-                <select name="event" id="event">
+                <select name="event"  [(ngModel)]="pick"  id="event">
                     <option value="bike"></option>
                   <option value="bike">Bike</option>
                   <option value="car">Car</option>
@@ -48,43 +48,32 @@
             
               <div class="col-50">
 
-        <label for="passenger">Band name</label><br>
-                <input type="name" id="passenger" name="passenger" required>
+        <label for="passenger"> car or bike name</label><br>
+                <input type="name" id="passenger" name="passenger" [(ngModel)]="brand" required>
               </div>
             </div>     
        
         <div class="row">
           <div class="col-50">
-            <p>Permanent Address</p>
+            <p>Communication Address</p>
              <label for="pstreet">Street</label>
-              <input type="text" id="pstreet" name="pstreet" required>
+              <input type="text" id="pstreet" name="pstreet" [(ngModel)]="street" required>
               <label for="pcity">City</label>
-              <input type="text" id="pcity" name="pcity" required>
+              <input type="text" id="pcity" name="pcity" [(ngModel)]="city" required>
               <label for="pstate">State</label>
-              <input type="text" id="pstate" name="pstate" required>
+              <input type="text" id="pstate" name="pstate" [(ngModel)]="state" required>
              
              
           
           </div>
-          <div class="col-50">
-        
-            <p> Communication Address</p>
-               <label for="dstreet">Street</label>
-              <input type="text" id="dstreet" name="dstreet" required>
-              <label for="dcity">City</label>
-              <input type="text" id="dcity" name="dcity" required>
-              <label for="dstate">State</label>
-              <input type="text" id="dstate" name="dstate" required>
-             
-
-        </div>
+         
           </div>
             <label for="message">Message</label>
-            <textarea id="message" name="message" style="height:100px"></textarea>  
-       <input type="radio" id="cod" name="trip" value="cod">
+            <textarea id="message" name="message" [(ngModel)]="message" style="height:100px"></textarea>  
+       <input type="radio" id="cod" name="trip"  value="cod">
       <label for="oneway">cash on delivery</label><br>
       
-        <input type="submit" value="Confirm Booking" class="btn">
+        <input type="submit" (click)="book()" value="Confirm Booking" class="btn">
       </form>
     </div>
   </div>

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "project-ba287": {
+      "hosting": {
+        "minip": [
+          "project-ba287"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "project-ba287"
+  }
+}

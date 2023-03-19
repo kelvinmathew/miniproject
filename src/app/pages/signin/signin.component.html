@@ -1,32 +1,48 @@
-<div class="img" >
+
+<div class="container-fluid">
+   <div class="row mt-5">
     
+        <div class="col"></div>  
+            
+            <div class="col-4">
+                <div class="card shadow">
+                 
+                   <div class="card-body">
+                    
+                    <form> 
+                     
+                      <div class="mb-3">
+                        <h4 class="text-dark text-muted">Login</h4>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email </label>
+                        <input type="email" class="form-control" name="email" [(ngModel)]="email">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" name="password"  [(ngModel)]="password">
+                      </div>
+                      
+                      <button type="button" class="btn btn-info" (click)="signin()">Login</button>
 
- 
+                      <div class="row">
 
+                        <div class="col-md-6">
+                          <a href="signup" style="text-decoration: none; ">Need Account ? <span class="text-danger"> REGISTER </span></a>
+                        </div>
+                        <div class="col-md-6">
+                          <a href=""  class="text-dark" style="text-decoration: none; ">Forgot password</a>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
 
-
-<div class="wrapper fadeInDown"   >
-    <div id="formContent" >
-      <!-- Tabs Titles -->
-      <h2 class="active"> Sign In </h2>
+                </div>
       
-  
-      <!-- Icon -->
-      <div class="fadeIn first">
-        <img src="https://cdn.shopify.com/s/files/1/0076/1413/6383/products/Screen_Shot_2019-09-05_at_5.52.49_PM_900x.png?v=1603218007" id="" alt="User Icon" width="100" height="90">
-      </div>
-  
-      <!-- Login Form -->
-      <form>
-        <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
-        <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
-        <input type="submit" class="fadeIn fourth" value="Log In">
-      </form>
-  
-      <!-- Remind Passowrd -->
-      <div id="formFooter">
-        <a class="underlineHover" href="#">Forgot Password?</a>
-      </div>
-  
+              </div> 
+                    <div class="col">
+                      
+      
+                  </div> 
     </div>
-  </div> </div>
+</div>

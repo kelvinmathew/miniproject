@@ -1,78 +1,64 @@
-<div class="img" >
 
 
 
-
-
-
-
-<div class="container h-50">
-    <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col-lg-12 col-xl-11">
-        <div class="card text-black" style="border-radius: 25px;">
-          <div class="card-body p-md-5">
-            <div class="row justify-content-center">
-              <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
-
-                <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
-
-                <form class="mx-1 mx-md-4">
-
-                  <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
-                    <div class="form-outline flex-fill mb-0">
-                      <input type="text" id="form3Example1c" class="form-control" />
-                      <label class="form-label" for="form3Example1c">Your Name</label>
-                    </div>
-                  </div>
-
-                  <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
-                    <div class="form-outline flex-fill mb-0">
-                      <input type="email" id="form3Example3c" class="form-control" />
-                      <label class="form-label" for="form3Example3c">Your Email</label>
-                    </div>
-                  </div>
-
-                  <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
-                    <div class="form-outline flex-fill mb-0">
-                      <input type="password" id="form3Example4c" class="form-control" />
-                      <label class="form-label" for="form3Example4c">Password</label>
-                    </div>
-                  </div>
-
-                  <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-key fa-lg me-3 fa-fw"></i>
-                    <div class="form-outline flex-fill mb-0">
-                      <input type="password" id="form3Example4cd" class="form-control" />
-                      <label class="form-label" for="form3Example4cd">Repeat your password</label>
-                    </div>
-                  </div>
-
-                  <div class="form-check d-flex justify-content-center mb-5">
-                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
-                    <label class="form-check-label" for="form2Example3">
-                      I agree all statements in <a href="#!">Terms of service</a>
-                    </label>
-                  </div>
-
-                  <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                    <button type="button" class="btn btn-primary btn-lg">Register</button>
-                  </div>
-
-                </form>
-
+  <section class="vh-100" style="background-color: #f1f1f1f6;" id="bg">
+    <div class="container py-5 h-100" >
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col col-xl-10">
+          <div class="card" style="border-radius: 1rem;">
+            <div class="row g-0">
+              <div  class="col-md-6 col-lg-5 d-none d-md-block" style="margin-top: 100px;padding-left: 45px;">
+                <img  src="https://images.pexels.com/photos/3264504/pexels-photo-3264504.jpeg?auto=compress&cs=tinysrgb&w=600"alt="login form" class="img-fluid">
               </div>
-              <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+              <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                <div class="card-body p-4 p-lg-5 text-black">
+  
+                  <form>
+  
+                    <div class="d-flex align-items-center mb-3 pb-1">
+                      <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
+                      <span id="font" class="h1 fw-bold mb-0"><b>SIGNUP</b></span>
+                    </div>
+  
+                    <h5 id="font" class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Create your account</h5>
+  
+                    <div class="form-outline mb-4">
+                     
+                          <label id="font" class="form-label" for="form3Example1c"><b> Name</b></label>
+                          <input type="text" class="form-control form-control-lg" name="text" [(ngModel)]="name" >
 
-                <img src="https://th.bing.com/th/id/R.1bc559cacbc741caae7523b74a8a864e?rik=X14cDNKTcKtqew&riu=http%3a%2f%2fwww.moonjoggers.com%2fwp-content%2fuploads%2f2015%2f08%2fSIGN-UP-HERE-1024x492.png&ehk=ADpScdcZhet3IU%2bfx9udcVotEl6bIc0sDklL1sdgXw8%3d&risl=&pid=ImgRaw&r=0"
-                  class="img-fluid" alt="Sample image">
+                    </div>
+                       <div class="form-outline mb-4">
+  
+                      <input type="email" id="form2Example17" class="form-control form-control-lg" /> 
+                    
+                        <label id="font"  class="form-label" for="form3Example1c"><b> Email</b></label>
+                        <input type="email" id="form2Example17" class="form-control form-control-lg" name="email" [(ngModel)]="email" >
+                    </div>
+  
+                    <div class="form-outline mb-4">
+                     
+                        <label id="font"  class="form-label" for="form3Example4c"><b> Password</b></label>
+                        <input type="password" id="form2Example17" class="form-control form-control-lg" name="password" [(ngModel)]="password" >
+                      
 
+                    </div>
+  
+                    <div class="pt-1 mb-4">
+                      <button id="bt" class="btn btn-dark btn-lg btn-block"  style="background-color: #5a3838;" type="button"  (click)="signup()">Signup</button>
+                    </div>
+
+                    <div class="col-md-6">
+                        <a href="/signin" style="text-decoration: underline;color:#5a3838;">Already have an account ?</a>
+                    </div>
+  
+                  </form>
+  
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div></div>
+  </section>

@@ -16,6 +16,13 @@ import { BikepageComponent } from './pages/bikepage/bikepage.component';
 import { FooterComponent } from './units/footer/footer.component';
 import { Singlepages1Component } from './pages/singlepages1/singlepages1.component';
 import { BookingpagesComponent } from './pages/bookingpages/bookingpages.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { FormsModule } from '@angular/forms';
+import { AngularFireModule } from '@angular/fire/compat'
+
 
 
 
@@ -36,6 +43,7 @@ import { BookingpagesComponent } from './pages/bookingpages/bookingpages.compone
     FooterComponent,
     Singlepages1Component,
     BookingpagesComponent,
+    
    
   
     
@@ -45,7 +53,12 @@ import { BookingpagesComponent } from './pages/bookingpages/bookingpages.compone
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    FormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+    provideFirestore(() => getFirestore())
   ],
   providers: [],
   bootstrap: [AppComponent]

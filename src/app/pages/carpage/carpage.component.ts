@@ -15,7 +15,7 @@ carpage=this.hero.givedata();
 navigateToNextPage(id:any) {
   
 localStorage.setItem('id',id);
-this.router.navigate(['/single pages']);
+this.router.navigate(['/singlepages']);
 
  
 
